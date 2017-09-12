@@ -26,8 +26,6 @@ public class PdfGenerationDemo
         RESOURCES_DIR = "src//main//resource//";
         OUTPUT_DIR = "src//main//resource//output//";
     }
-
-    
     
     public static void main( String[] args )
     {
