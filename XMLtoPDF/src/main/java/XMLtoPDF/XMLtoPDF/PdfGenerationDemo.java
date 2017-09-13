@@ -22,21 +22,26 @@ public class PdfGenerationDemo
     public static final String RESOURCES_DIR;
     public static final String OUTPUT_DIR;
 
+    
     static {
         RESOURCES_DIR = "src//main//resource//";
         OUTPUT_DIR = "src//main//resource//output//";
     }
     
-    public static void main( String[] args )
+    public PdfGenerationDemo() {
+    	
+    }
+    
+/*   public static void main( String[] args )
     {
         try {
             convertToPDF();
         } catch (FOPException | IOException | TransformerException e) {
             e.printStackTrace();
         }
-    }
+    }  */
 
-    public static void convertToPDF() throws IOException, FOPException, TransformerException {
+    public String convertToPDF() throws IOException, FOPException, TransformerException {
         // the XSL FO file
         File xsltFile = new File(RESOURCES_DIR + "//template.xsl");
         // the XML file which provides the input
@@ -68,5 +73,6 @@ public class PdfGenerationDemo
         } finally {
             out.close();
         }
+        return ("true");
     }
 }

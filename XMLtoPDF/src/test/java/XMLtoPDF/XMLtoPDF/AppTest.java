@@ -1,38 +1,44 @@
 package XMLtoPDF.XMLtoPDF;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
+import static org.junit.Assert.*;
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
+import org.junit.Test;
+import org.junit.Rule;
+import org.junit.rules.ExpectedException;
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+
+import java.io.IOException;
+import org.apache.fop.apps.FOPException;
+import javax.xml.transform.TransformerException;
+import java.util.ArrayList;
+import java.awt.List;
+
+public class AppTest {
+
+	@Rule
+	public ExpectedException thrown = ExpectedException.none();
+	
+	@Test
+	public void test() {
+		
+		try {
+		  PdfGenerationDemo pdf = new PdfGenerationDemo();
+		  if (pdf.convertToPDF() != "true") {
+		         fail("Test Failed");
+		  };
+		} catch (FOPException | IOException | TransformerException e) {
+		          e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public void shouldTestExceptionMessage() throws FOPException {
+		ArrayList<Object> list = new ArrayList<Object>();
+	    thrown.expect(FOPException.class);
+	    thrown.expectMessage("FOPException  Found");
+//	    list.get(0); // execution will never get past this line
+	}
+
 }
+		  
