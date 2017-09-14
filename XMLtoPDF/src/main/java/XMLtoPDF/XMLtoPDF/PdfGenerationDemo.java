@@ -26,6 +26,7 @@ public class PdfGenerationDemo
     static {
         RESOURCES_DIR = "src//main//resource//";
         OUTPUT_DIR = "src//main//resource//output//";
+//        OUTPUT_DIR = ".";
     }
     
     public PdfGenerationDemo() {
