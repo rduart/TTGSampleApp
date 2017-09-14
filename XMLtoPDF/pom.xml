@@ -28,6 +28,14 @@
     	<artifactId>fop</artifactId>
     	<version>2.2</version>
 	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.sonarsource.sonarqube/sonar-application -->
+	<dependency>
+    	<groupId>org.sonarsource.sonarqube</groupId>
+    	<artifactId>sonar-application</artifactId>
+    	<version>6.5</version>
+	</dependency>
+
   </dependencies>
   
   <build>
