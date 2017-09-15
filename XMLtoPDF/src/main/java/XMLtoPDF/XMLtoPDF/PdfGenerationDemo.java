@@ -55,6 +55,8 @@ public class PdfGenerationDemo
         // the XSL FO file
         File xsltFile = new File(RESOURCES_DIR + "//template.xsl");
        
+        
+        
         // the XML file which provides the input
         StreamSource xmlSource = new StreamSource(new File(RESOURCES_DIR + "//data.xml"));
         // create an instance of fop factory
