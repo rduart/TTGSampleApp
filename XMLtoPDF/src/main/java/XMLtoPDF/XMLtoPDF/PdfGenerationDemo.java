@@ -1,8 +1,17 @@
 package XMLtoPDF.XMLtoPDF;
 
+import java.io.DataInputStream;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
+
+
+
+import java.net.URISyntaxException;
+import java.net.URL;
 
 import javax.xml.transform.Result;
 import javax.xml.transform.Transformer;
@@ -45,6 +54,7 @@ public class PdfGenerationDemo
     public String convertToPDF() throws IOException, FOPException, TransformerException {
         // the XSL FO file
         File xsltFile = new File(RESOURCES_DIR + "//template.xsl");
+       
         // the XML file which provides the input
         StreamSource xmlSource = new StreamSource(new File(RESOURCES_DIR + "//data.xml"));
         // create an instance of fop factory
@@ -76,4 +86,5 @@ public class PdfGenerationDemo
         }
         return ("true");
     }
+    
 }
