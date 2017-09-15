@@ -30,20 +30,22 @@
 	</dependency>
 	
 	<!-- https://mvnrepository.com/artifact/org.sonarsource.sonarqube/sonar-application -->
-	<dependency>
+<!--  	<dependency>
     	<groupId>org.sonarsource.sonarqube</groupId>
     	<artifactId>sonar-application</artifactId>
     	<version>6.5</version>
-	</dependency>
+	</dependency>  -->
 
   </dependencies>
   
   <build>
   
         <finalName>ApacheFopDemo</finalName>
-
-		<!-- Set a compiler level -->
+        
         <plugins>
+      
+		<!-- Set a compiler level -->
+        
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
