@@ -54,11 +54,15 @@
                 </configuration> 
             </plugin>
             
- 
+            
+            
+            <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
+
             <!-- Make this jar executable -->
  			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.0.2</version>
 				<configuration>
 				  <!-- DO NOT include log4j.properties file in your Jar -->
 				  <excludes>
