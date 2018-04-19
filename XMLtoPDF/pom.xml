@@ -81,7 +81,7 @@
 	  
   </dependencies>
   <scm>
-    <developerConnection>scm:git:https://https://github.com/rduart/XMLtoPDF/</developerConnection>
+    <developerConnection>scm:git:https://github.com/rduart/XMLtoPDF/</developerConnection>
   </scm>
 	
   <build>
