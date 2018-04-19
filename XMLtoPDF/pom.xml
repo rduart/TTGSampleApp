@@ -61,12 +61,22 @@
 
 
   </dependencies>
-  
+  <scm>
+    <developerConnection>scm:git:https://https://github.com/rduart/XMLtoPDF/</developerConnection>
+  </scm>
+	
   <build>
   
         <finalName>ApacheFopDemo</finalName>
         
         <plugins>
+		
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>2.5.3</version>
+      </plugin>
+   
       
 		<!-- Set a compiler level -->
      <!--    
