@@ -83,7 +83,7 @@
   <scm>
     <connection>scm:git:https://github.com/rduart/XMLtoPDF.git</connection>
     <developerConnection>scm:git:https://github.com/rduart/XMLtoPDF/</developerConnection>
-    <tag>HEAD</tag>
+    <tag>0.0.1.138</tag>
   </scm>
 	
   <build>
