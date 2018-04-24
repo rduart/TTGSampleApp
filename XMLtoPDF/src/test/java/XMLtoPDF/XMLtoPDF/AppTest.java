@@ -29,8 +29,8 @@ public class AppTest {
 		  };
 		} catch (FOPException | IOException | TransformerException e) {
 		          e.printStackTrace();
-		}
-	} */
+		} */
+	} 
 	
 //	@Test
 //	public void shouldTestExceptionMessage() throws FOPException {
