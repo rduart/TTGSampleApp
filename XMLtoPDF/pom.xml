@@ -3,7 +3,7 @@
 
   <groupId>XMLtoPDF</groupId>
   <artifactId>XMLtoPDF</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1.151</version>
   <packaging>jar</packaging>  
 
        <pluginRepositories>
