@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>XMLtoPDF</groupId>
@@ -28,6 +27,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.scm.id>git-scm-server</project.scm.id>
   </properties>
 
   <dependencies>
@@ -58,11 +58,33 @@
     	<artifactId>sonarpdf-maven-plugin</artifactId>
     	<version>1.3.1</version>
 	</dependency>
-
-  
+    
+<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-source-plugin -->
+<dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-source-plugin</artifactId>
+    <version>3.0.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-javadoc-plugin -->
+<dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-javadoc-plugin</artifactId>
+    <version>3.0.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-deploy-plugin -->
+<dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-deploy-plugin</artifactId>
+    <version>2.8.2</version>
+</dependency>
+	  
+	  
   </dependencies>
   <scm>
+    <connection>scm:git:https://github.com/rduart/XMLtoPDF.git</connection>
     <developerConnection>scm:git:https://github.com/rduart/XMLtoPDF/</developerConnection>
+    <tag>HEAD</tag>
+
   </scm>
 	
   <build>
@@ -151,8 +173,8 @@
 			</plugin>
               
         </plugins>
-    </build>
-<!--	
+  </build>
+    
 	<distributionManagement>
   <snapshotRepository>
     <id>snapshots</id>
@@ -163,5 +185,5 @@
     <url>http://158.96.16.218:8081/nexus/content/repositories/releases</url>
   </repository>
 </distributionManagement>
-	-->
+
 </project>
