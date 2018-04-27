@@ -3,7 +3,7 @@
 
   <groupId>XMLtoPDF</groupId>
   <artifactId>XMLtoPDF</artifactId>
-  <version>0.0.1.153-SNAPSHOT</version>
+  <version>0.0.1.153.154</version>
   <packaging>jar</packaging>  
 
        <pluginRepositories>
@@ -83,7 +83,7 @@
   <scm>
     <connection>scm:git:https://github.com/rduart/XMLtoPDF.git</connection>
     <developerConnection>scm:git:https://github.com/rduart/XMLtoPDF/</developerConnection>
-    <tag>HEAD</tag>
+    <tag>0.0.1.153.154</tag>
 
   </scm>
 	
