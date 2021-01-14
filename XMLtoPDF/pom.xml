@@ -20,8 +20,6 @@
                      </releases>
               </pluginRepository>
        </pluginRepositories>
-
-
   <name>XMLtoPDF</name>
   <url>http://maven.apache.org</url>
 
